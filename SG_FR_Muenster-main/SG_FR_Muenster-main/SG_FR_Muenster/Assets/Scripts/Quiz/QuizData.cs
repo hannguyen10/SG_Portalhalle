@@ -12,8 +12,8 @@ public class QuizData : ScriptableObject
     public int correctAnswerIndex;
 
     [TextArea]
-    public string correctExplanation;
+    public string[] correctExplanationLines;
 
     [TextArea]
-    public string wrongExplanation;
+    public string[] wrongExplanationLines;
 }

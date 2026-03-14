@@ -12,11 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c584e16790feaf4383516e1450d1dba, type: 3}
   m_Name: Quiz_Jungfrauen_Test
   m_EditorClassIdentifier: 
-  question: "Was entscheidet dar\xFCber, wer in die Kirche eintreten darf?\r\n"
+  question: Was zeigt diese Geschichte vor allem?
   answers:
-  - "Sch\xF6nheit der Figuren"
-  - Die Anzahl der Jungfrauen
-  - Wachsamkeit und Vorbereitung
+  - "Eine Regel f\xFCr n\xE4chtliche Feiern und Hochzeitsz\xFCge"
+  - "Eine Beschreibung alter Hochzeitsbr\xE4uche und Traditionen"
+  - Die Bedeutung von Vorbereitung und den anhaltenden Glauben im entscheidenden
+    Moment
   correctAnswerIndex: 2
-  correctExplanation: "Ganz genau.\r                     \r"
-  wrongExplanation: Leider falsch.
+  correctExplanationLines:
+  - "Genau. Wenn der Moment kommt, z\xE4hlt nur, ob man bereit ist."
+  wrongExplanationLines:
+  - Nicht ganz. Es geht mehr als nur eine Hochzeit.

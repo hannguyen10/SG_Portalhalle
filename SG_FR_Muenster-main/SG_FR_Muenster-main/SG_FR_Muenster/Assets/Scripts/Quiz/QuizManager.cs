@@ -7,6 +7,7 @@ public class QuizManager : MonoBehaviour
 {
     [Header("UI")]
     public CanvasGroup canvasGroup;
+    public Dialogue dialogueManager;
     public TextMeshProUGUI questionText;
     public Button[] answerButtons;
     public TextMeshProUGUI feedbackText;
@@ -72,23 +73,20 @@ public class QuizManager : MonoBehaviour
 
     void Answer(int index)
     {
-        Debug.Log("Antwort geklickt: " + index);
-
-        // Buttons deaktivieren
         foreach (Button b in answerButtons)
             b.interactable = false;
 
-        if (index == currentQuiz.correctAnswerIndex)
-        {
-            feedbackText.text = currentQuiz.correctExplanation;
-        }
-        else
-        {
-             feedbackText.text = currentQuiz.wrongExplanation;
-        }
+        string[] explanationLines =
+            (index == currentQuiz.correctAnswerIndex)
+            ? currentQuiz.correctExplanationLines
+            : currentQuiz.wrongExplanationLines;
 
-        Invoke(nameof(CloseQuiz), 3f);
+        CloseQuiz();
+
+        dialogueManager.gameObject.SetActive(true);
+        dialogueManager.StartDialogue(explanationLines);
     }
+
 
     void CloseQuiz()
     {

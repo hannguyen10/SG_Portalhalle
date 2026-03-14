@@ -4999,6 +4999,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 1710379046}
+  dialogueManager: {fileID: 365554578}
   questionText: {fileID: 1023086311}
   answerButtons:
   - {fileID: 916711380}
