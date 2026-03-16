@@ -5,10 +5,11 @@ using TMPro;
 
 public class Dialogue : MonoBehaviour
 {
+    public UnityEngine.UI.Image dialogueImage;
     public MouseMovement mouseMovement;
     public TextMeshProUGUI textComponent;
     public float textSpeed;
-    private string[] lines;
+    private DialogueLine[] lines;
 
     private int index;
     private bool dialogueActive = false;
@@ -26,14 +27,14 @@ public class Dialogue : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            if (textComponent.text == lines[index])
+            if (textComponent.text == lines[index].text)
             {
                 NextLine();
             }
             else
             {
                 StopAllCoroutines();
-                textComponent.text = lines[index];
+                textComponent.text = lines[index].text;
             }
         }
     }
@@ -43,7 +44,7 @@ public class Dialogue : MonoBehaviour
         pendingQuiz = quiz;
     }
 
-    public void StartDialogue(string[] dialogueLines)
+    public void StartDialogue(DialogueLine[] dialogueLines)
     {
         if (IsDialogueActive) return;
         pendingQuiz = null;
@@ -64,9 +65,24 @@ public class Dialogue : MonoBehaviour
         StartCoroutine(TypeLine());
     }
 
+    void ShowLine()
+    {
+        textComponent.text = lines[index].text;
+
+        if (lines[index].image != null)
+        {
+            dialogueImage.gameObject.SetActive(true);
+            dialogueImage.sprite = lines[index].image;
+        }
+        else
+        {
+            dialogueImage.gameObject.SetActive(false);
+        }
+    }
+
     IEnumerator TypeLine()
     {
-        foreach (char c in lines[index].ToCharArray())
+        foreach (char c in lines[index].text.ToCharArray())
         {
             textComponent.text += c;
             yield return new WaitForSeconds(textSpeed);
@@ -79,6 +95,7 @@ public class Dialogue : MonoBehaviour
         if (index < lines.Length - 1)
         {
             index++;
+            ShowLine();
             textComponent.text = string.Empty;
             StartCoroutine(TypeLine());
             return;

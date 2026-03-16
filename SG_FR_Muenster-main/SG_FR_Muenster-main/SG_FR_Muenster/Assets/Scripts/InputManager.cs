@@ -18,8 +18,6 @@ public class InputManager : MonoBehaviour
         onFoot = playerInput.OnFoot;
         movement = GetComponent<PlayerMovement>();
         mouse = GetComponent<MouseMovement>();
-        // ctx = callback context -> call out movement.Jump()
-        onFoot.Jump.performed += ctx => movement.Jump();
     }
 
 

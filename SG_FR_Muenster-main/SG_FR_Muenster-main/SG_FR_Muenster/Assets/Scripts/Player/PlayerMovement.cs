@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     private bool isGrounded;
     public float speed = 5f;
     public float gravity = -9.8f;
-    public float jumpHeight = 3f;
+   
     
     void Start()
     {
@@ -28,19 +28,13 @@ public class PlayerMovement : MonoBehaviour
         moveDirection.x = input.x;
         moveDirection.z = input.y;
         controller.Move(transform.TransformDirection(moveDirection) * speed * Time.deltaTime);
-        playerVelocity.y += gravity * Time.deltaTime;
+        
         if (isGrounded && playerVelocity.y < 0)
             playerVelocity.y = -2f;
+        
+        playerVelocity.y += gravity * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
         
-
-    }
-    public void Jump()
-    {
-        if (isGrounded)
-        {
-            playerVelocity.y = Mathf.Sqrt(jumpHeight * -3.0f * gravity);
-        }
-    }
+    }  
 
 }

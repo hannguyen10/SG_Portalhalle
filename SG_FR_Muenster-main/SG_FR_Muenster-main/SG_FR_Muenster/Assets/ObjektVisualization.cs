@@ -10,8 +10,7 @@ public class ObjektVisualization : MonoBehaviour, IInteractable
 
     [Header("Dialog")]
     public Dialogue dialogueManager;
-    [TextArea(3, 5)]
-    public string[] dialogueLines;
+    public DialogueLine[] dialogueLines;
 
     [Header("Quiz")]
     public QuizData quizData;
@@ -32,7 +31,7 @@ public class ObjektVisualization : MonoBehaviour, IInteractable
     public void OnHoverEnter()
     {
         if (Dialogue.IsDialogueActive || QuizManager.IsQuizActive)
-        return;
+            return;
 
         mat.SetColor("_EmissionColor", glowEmission);
         hintUI?.Show(hintText);
@@ -50,6 +49,7 @@ public class ObjektVisualization : MonoBehaviour, IInteractable
         if (Dialogue.IsDialogueActive) return;
 
         Debug.Log("Interaktion gestartet");
+
 
         dialogueManager.gameObject.SetActive(true);
         dialogueManager.StartDialogue(dialogueLines);

@@ -83,8 +83,16 @@ public class QuizManager : MonoBehaviour
 
         CloseQuiz();
 
+        DialogueLine[] dialogueLines = new DialogueLine[explanationLines.Length];
+
+        for (int i = 0; i < explanationLines.Length; i++)
+        {
+            dialogueLines[i] = new DialogueLine();
+            dialogueLines[i].text = explanationLines[i];
+        }
+
         dialogueManager.gameObject.SetActive(true);
-        dialogueManager.StartDialogue(explanationLines);
+        dialogueManager.StartDialogue(dialogueLines);
     }
 
 
