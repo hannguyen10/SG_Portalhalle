@@ -1280,8 +1280,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 145, y: 239}
-  m_SizeDelta: {x: 1210, y: 440}
+  m_AnchoredPosition: {x: 195, y: 239}
+  m_SizeDelta: {x: 1110, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &365554580
 MonoBehaviour:
@@ -3722,8 +3722,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 145, y: 237}
-  m_SizeDelta: {x: 1210, y: 440}
+  m_AnchoredPosition: {x: 195, y: 237}
+  m_SizeDelta: {x: 1110, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1249303950
 MonoBehaviour:
@@ -3808,7 +3808,9 @@ MonoBehaviour:
   - Keine Sorge, Hinweise bekommst du unterwegs.
   - Also los.
   - Sieh dich um.
+  - Untersuche Figuren, Skulpturen und Details.
   - "Und wenn du mehr wissen willst\u2026 klick ruhig."
+  - Je genauer du hinsiehst, desto mehr gibt diese Halle preis.
 --- !u!1001 &1274574929
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3926,30 +3928,6 @@ MonoBehaviour:
   - text: "F\xFCnf klug."
     image: {fileID: 0}
   - text: "F\xFCnf t\xF6richt."
-    image: {fileID: 0}
-  - text: 
-    image: {fileID: 0}
-  - text: 
-    image: {fileID: 0}
-  - text: 
-    image: {fileID: 0}
-  - text: 
-    image: {fileID: 0}
-  - text: 
-    image: {fileID: 0}
-  - text: 
-    image: {fileID: 0}
-  - text: 
-    image: {fileID: 0}
-  - text: 
-    image: {fileID: 0}
-  - text: 
-    image: {fileID: 0}
-  - text: 
-    image: {fileID: 0}
-  - text: 
-    image: {fileID: 0}
-  - text: 
     image: {fileID: 0}
   quizData: {fileID: 11400000, guid: 72473ec677b24ac40a942ab38d3d85ac, type: 2}
   quizManager: {fileID: 1710379045}
@@ -4162,7 +4140,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10, y: -40}
+  m_AnchoredPosition: {x: 50, y: -40}
   m_SizeDelta: {x: 1000, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1422406237
@@ -4393,7 +4371,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10, y: -40}
+  m_AnchoredPosition: {x: 50, y: -40}
   m_SizeDelta: {x: 1000, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1438938956
@@ -5068,8 +5046,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lookEnabled: 1
   cam: {fileID: 1119413017}
-  xSensitivity: 10
-  ySensitivity: 10
+  xSensitivity: 8
+  ySensitivity: 8
 --- !u!4 &1758050977 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5022114256942132371, guid: d86a5fc198f37a841ba9583fd4bef654, type: 3}
