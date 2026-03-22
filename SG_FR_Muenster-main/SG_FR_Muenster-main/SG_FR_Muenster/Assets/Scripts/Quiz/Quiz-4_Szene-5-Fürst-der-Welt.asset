@@ -12,8 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c584e16790feaf4383516e1450d1dba, type: 3}
   m_Name: "Quiz-4_Szene-5-F\xFCrst-der-Welt"
   m_EditorClassIdentifier: 
-  question: 
-  answers: []
+  question: "Warum wirkt der \u201EF\xFCrst der Welt\u201C von hinten so absto\xDFend?"
+  answers:
+  - "Um vor T\xE4uschung und Versuchung zu warnen"
+  - 'Der Steinmetz hat sich einen Witz erlaubt '
+  - "Weil die R\xFCckseite unwichtig war"
   correctAnswerIndex: 0
-  correctExplanationLines: []
-  wrongExplanationLines: []
+  correctExplanationLines:
+  - Ganz genau. Man muss manchmal hinter die Fassade schauen.
+  - Ich kenne mich damit aus.
+  wrongExplanationLines:
+  - "Leider nein. So zuf\xE4llig ist diese Darstellung nicht."

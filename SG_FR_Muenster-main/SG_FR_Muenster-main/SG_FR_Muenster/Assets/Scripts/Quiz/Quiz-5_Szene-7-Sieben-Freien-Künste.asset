@@ -12,8 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c584e16790feaf4383516e1450d1dba, type: 3}
   m_Name: "Quiz-5_Szene-7-Sieben-Freien-K\xFCnste"
   m_EditorClassIdentifier: 
-  question: 
-  answers: []
-  correctAnswerIndex: 0
-  correctExplanationLines: []
-  wrongExplanationLines: []
+  question: " Welche Kunst geh\xF6rt zum Trivium?"
+  answers:
+  - Geometrie
+  - Astronomie
+  - Rhetorik
+  correctAnswerIndex: 2
+  correctExplanationLines:
+  - "Genau. Rhetorik geh\xF6rt zum Trivium und ist die Kunst der Worte."
+  wrongExplanationLines:
+  - "Nicht ganz. Denk an die K\xFCnste, die mit Sprache zu tun haben."
