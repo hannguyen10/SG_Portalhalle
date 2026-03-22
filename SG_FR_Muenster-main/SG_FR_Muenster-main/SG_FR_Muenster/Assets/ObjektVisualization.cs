@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class ObjektVisualization : MonoBehaviour, IInteractable
 {
-    private Renderer rend;
-    private Material mat;
+    private Renderer[] rends;
+    private Material[] mats;
 
     private Color baseEmission = Color.black;
-    private Color glowEmission = Color.yellow * 2f; // Intensität!
+    private Color glowEmission = Color.yellow * 2f;
 
     [Header("Dialog")]
     public Dialogue dialogueManager;
@@ -20,12 +20,20 @@ public class ObjektVisualization : MonoBehaviour, IInteractable
     public InteractionHintUI hintUI;
     public string hintText = "Klicke, um mehr zu erfahren";
 
+    private Outline outline;
 
     void Start()
     {
-        rend = GetComponent<Renderer>();
-        mat = rend.material;
-        mat.EnableKeyword("_EMISSION");
+        outline = GetComponent<Outline>();
+
+        if (outline != null)
+        {
+            outline.enabled = false;
+        }
+        else
+        {
+            Debug.LogWarning("Kein Outline Component auf " + gameObject.name);
+        }
     }
 
     public void OnHoverEnter()
@@ -33,30 +41,27 @@ public class ObjektVisualization : MonoBehaviour, IInteractable
         if (Dialogue.IsDialogueActive || QuizManager.IsQuizActive)
             return;
 
-        mat.SetColor("_EmissionColor", glowEmission);
+        outline.enabled = true;
         hintUI?.Show(hintText);
     }
 
     public void OnHoverExit()
     {
-        mat.SetColor("_EmissionColor", baseEmission);
+        outline.enabled = false;
         hintUI?.Hide();
     }
 
     public void Interact()
     {
-
         if (Dialogue.IsDialogueActive) return;
 
         Debug.Log("Interaktion gestartet");
-
 
         dialogueManager.gameObject.SetActive(true);
         dialogueManager.StartDialogue(dialogueLines);
 
         if (quizData != null)
         {
-            Debug.Log("Quiz an Dialog angehängt");
             dialogueManager.SetQuizAfterDialogue(quizData);
         }
         else
@@ -65,4 +70,3 @@ public class ObjektVisualization : MonoBehaviour, IInteractable
         }
     }
 }
-

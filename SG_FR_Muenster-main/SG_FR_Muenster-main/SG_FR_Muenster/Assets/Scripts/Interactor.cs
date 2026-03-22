@@ -11,7 +11,7 @@ interface IInteractable
 public class Interactor : MonoBehaviour
 {
     public Transform InteractorSource;
-    public float InteractRange = 3f;
+    public float InteractRange = 10f;
 
     private IInteractable currentInteractable;
 
