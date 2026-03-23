@@ -12,8 +12,8 @@ public class MouseMovement : MonoBehaviour
     public Camera cam;
     private float xRotation = 0f;
 
-    public float xSensitivity = 2f;
-    public float ySensitivity = 2f;
+    public float xSensitivity = 1f;
+    public float ySensitivity = 1f;
 
     public void ProcessLook(Vector2 input)
     {
