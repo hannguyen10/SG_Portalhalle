@@ -14,6 +14,7 @@ public class Dialogue : MonoBehaviour
     private int index;
     private bool dialogueActive = false;
     public static bool IsDialogueActive = false;
+    private bool isEndDialogue = false;
 
     public System.Action OnDialogueFinished;
 
@@ -44,7 +45,7 @@ public class Dialogue : MonoBehaviour
         pendingQuiz = quiz;
     }
 
-    public void StartDialogue(DialogueLine[] dialogueLines)
+    public void StartDialogue(DialogueLine[] dialogueLines, bool endDialogue = false)
     {
         if (IsDialogueActive) return;
         pendingQuiz = null;
@@ -54,6 +55,8 @@ public class Dialogue : MonoBehaviour
 
         lines = dialogueLines;
         index = 0;
+
+        isEndDialogue = endDialogue;
 
         mouseMovement.lookEnabled = false;
 
@@ -107,6 +110,13 @@ public class Dialogue : MonoBehaviour
 
         gameObject.SetActive(false);
 
+        if (isEndDialogue)
+        {
+            if (OnDialogueFinished != null)
+            {
+                OnDialogueFinished.Invoke();
+            }
+        }
         // FALL 1: Quiz folgt
         if (pendingQuiz != null && quizManager != null)
         {
@@ -117,6 +127,7 @@ public class Dialogue : MonoBehaviour
         }
 
         // FALL 2: Kein Quiz → zurück ins Gameplay
+
         if (mouseMovement != null)
             mouseMovement.lookEnabled = true;
 
