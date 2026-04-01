@@ -38,6 +38,7 @@ public class ObjektVisualization : MonoBehaviour, IInteractable
 
     public void OnHoverEnter()
     {
+        Debug.Log("Hover über Objekt: " + gameObject.name);
         if (Dialogue.IsDialogueActive || QuizManager.IsQuizActive)
             return;
 

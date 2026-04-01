@@ -14,13 +14,14 @@ public class InteractionHintUI : MonoBehaviour
     {
         if (Dialogue.IsDialogueActive || QuizManager.IsQuizActive)
         return;
-        
+        Debug.Log("Hint SHOW");
         hintText.text = text;
         gameObject.SetActive(true);
     }
 
     public void Hide()
     {
+        Debug.Log("Hint HIDE");
         gameObject.SetActive(false);
     }
 }
