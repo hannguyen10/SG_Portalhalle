@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c584e16790feaf4383516e1450d1dba, type: 3}
   m_Name: "Quiz-3_Szene-4-klugen-t\xF6richten-Jungfrauen"
   m_EditorClassIdentifier: 
-  question: Was zeigt diese Geschichte vor allem?
+  question: Was zeigt diese Geschichte?
   answers:
   - "Eine Regel f\xFCr n\xE4chtliche Feiern und Hochzeitsz\xFCge"
   - "Eine Beschreibung alter Hochzeitsbr\xE4uche und Traditionen"

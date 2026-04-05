@@ -11,6 +11,7 @@ public class QuizManager : MonoBehaviour
     public TextMeshProUGUI questionText;
     public Button[] answerButtons;
     public TextMeshProUGUI feedbackText;
+    public GameObject darkBackground;
 
     [Header("Player")]
     public MouseMovement mouseMovement;
@@ -43,6 +44,9 @@ public class QuizManager : MonoBehaviour
 
         IsQuizActive = true;
         currentQuiz = quiz;
+
+        if (darkBackground != null)
+            darkBackground.SetActive(true);
 
         // Kamera & Maus
         mouseMovement.lookEnabled = false;
@@ -93,7 +97,7 @@ public class QuizManager : MonoBehaviour
         {
             dialogueLines[i] = new DialogueLine();
             dialogueLines[i].text = explanationLines[i];
-            dialogueLines[i].portrait = resultSprite; 
+            dialogueLines[i].portrait = resultSprite;
         }
         dialogueManager.gameObject.SetActive(true);
         dialogueManager.StartDialogue(dialogueLines);
@@ -108,6 +112,9 @@ public class QuizManager : MonoBehaviour
         canvasGroup.alpha = 0;
         canvasGroup.interactable = false;
         canvasGroup.blocksRaycasts = false;
+
+        if (darkBackground != null)
+            darkBackground.SetActive(false);
 
         // Gameplay zurück
         mouseMovement.lookEnabled = true;

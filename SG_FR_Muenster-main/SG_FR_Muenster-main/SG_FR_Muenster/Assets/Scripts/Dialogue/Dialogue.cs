@@ -7,9 +7,10 @@ using TMPro;
 public class Dialogue : MonoBehaviour
 {
     public UnityEngine.UI.Image dialogueImage;
+    public UnityEngine.UI.Image portraitImage;
+    public Sprite defaultPortrait;
     public MouseMovement mouseMovement;
     public TextMeshProUGUI textComponent;
-    public UnityEngine.UI.Image portraitImage;
     public float textSpeed;
     private DialogueLine[] lines;
     public GameObject darkBackground;
@@ -50,11 +51,17 @@ public class Dialogue : MonoBehaviour
 
     public void StartDialogue(DialogueLine[] dialogueLines, bool endDialogue = false)
     {
+
         if (IsDialogueActive) return;
         pendingQuiz = null;
 
         IsDialogueActive = true;
         dialogueActive = true;
+
+        if (portraitImage != null && defaultPortrait != null)
+        {
+            portraitImage.sprite = defaultPortrait;
+        }
 
         if (darkBackground != null)
             darkBackground.SetActive(true);
@@ -126,8 +133,11 @@ public class Dialogue : MonoBehaviour
 
         gameObject.SetActive(false);
 
-        if (darkBackground != null)
-            darkBackground.SetActive(false);
+        if (pendingQuiz == null)
+        {
+            if (darkBackground != null)
+                darkBackground.SetActive(false);
+        }
 
         if (isEndDialogue)
         {
