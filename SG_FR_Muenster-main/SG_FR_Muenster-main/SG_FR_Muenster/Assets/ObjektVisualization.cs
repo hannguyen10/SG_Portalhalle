@@ -58,16 +58,17 @@ public class ObjektVisualization : MonoBehaviour, IInteractable
 
         Debug.Log("Interaktion gestartet");
 
+        if (hintUI != null)
+            hintUI.Hide();
+
+        outline.enabled = false;
+
         dialogueManager.gameObject.SetActive(true);
         dialogueManager.StartDialogue(dialogueLines);
 
         if (quizData != null)
         {
             dialogueManager.SetQuizAfterDialogue(quizData);
-        }
-        else
-        {
-            Debug.LogWarning("Dieses Objekt hat kein QuizData!");
         }
     }
 }

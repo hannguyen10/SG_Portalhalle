@@ -45,6 +45,8 @@ public class QuizManager : MonoBehaviour
         IsQuizActive = true;
         currentQuiz = quiz;
 
+        dialogueManager.gameObject.SetActive(false);
+
         if (darkBackground != null)
             darkBackground.SetActive(true);
 

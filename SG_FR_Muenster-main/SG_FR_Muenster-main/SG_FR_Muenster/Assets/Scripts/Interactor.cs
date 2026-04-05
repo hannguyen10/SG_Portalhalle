@@ -17,6 +17,9 @@ public class Interactor : MonoBehaviour
 
     void Update()
     {
+        if (Dialogue.IsDialogueActive || QuizManager.IsQuizActive)
+        return;
+        
         Ray ray = new Ray(InteractorSource.position, InteractorSource.forward);
         RaycastHit hit;
 
