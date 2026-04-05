@@ -23,3 +23,5 @@ MonoBehaviour:
   - "Genau. Wenn der Moment kommt, z\xE4hlt nur, ob man bereit ist."
   wrongExplanationLines:
   - Nicht ganz. Es geht mehr als nur eine Hochzeit.
+  correctSprite: {fileID: 21300000, guid: 8cd97e44cc7e7c1419d4f0dbf06684e8, type: 3}
+  wrongSprite: {fileID: 21300000, guid: 60bb6d13ce82dec4ca85672733f822a3, type: 3}

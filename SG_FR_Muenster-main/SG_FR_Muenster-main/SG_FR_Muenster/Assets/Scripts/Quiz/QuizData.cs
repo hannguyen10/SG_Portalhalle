@@ -16,4 +16,8 @@ public class QuizData : ScriptableObject
 
     [TextArea]
     public string[] wrongExplanationLines;
+
+    [Header("Gargulus Sprites")]
+    public Sprite correctSprite;
+    public Sprite wrongSprite;
 }

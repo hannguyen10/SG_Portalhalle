@@ -23,3 +23,5 @@ MonoBehaviour:
   - Ich kenne mich damit aus.
   wrongExplanationLines:
   - "Leider nein. So zuf\xE4llig ist diese Darstellung nicht."
+  correctSprite: {fileID: 21300000, guid: 8cd97e44cc7e7c1419d4f0dbf06684e8, type: 3}
+  wrongSprite: {fileID: 21300000, guid: 60bb6d13ce82dec4ca85672733f822a3, type: 3}

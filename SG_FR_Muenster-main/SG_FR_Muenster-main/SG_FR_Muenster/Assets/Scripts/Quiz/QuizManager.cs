@@ -85,12 +85,16 @@ public class QuizManager : MonoBehaviour
 
         DialogueLine[] dialogueLines = new DialogueLine[explanationLines.Length];
 
+        Sprite resultSprite = (index == currentQuiz.correctAnswerIndex)
+            ? currentQuiz.correctSprite
+            : currentQuiz.wrongSprite;
+
         for (int i = 0; i < explanationLines.Length; i++)
         {
             dialogueLines[i] = new DialogueLine();
             dialogueLines[i].text = explanationLines[i];
+            dialogueLines[i].portrait = resultSprite; 
         }
-
         dialogueManager.gameObject.SetActive(true);
         dialogueManager.StartDialogue(dialogueLines);
     }

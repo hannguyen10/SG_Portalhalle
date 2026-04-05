@@ -9,4 +9,5 @@ public class DialogueLine
     public string text;
 
     public Sprite image;
+    public Sprite portrait;
 }

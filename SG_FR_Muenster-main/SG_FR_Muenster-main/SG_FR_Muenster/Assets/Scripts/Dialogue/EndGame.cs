@@ -22,7 +22,7 @@ public class EndGameTrigger : MonoBehaviour
         }
     }
 
-    void OpenEndPanel()
+    public void OpenEndPanel()
     {
         endConfirmUI.SetActive(true);
 

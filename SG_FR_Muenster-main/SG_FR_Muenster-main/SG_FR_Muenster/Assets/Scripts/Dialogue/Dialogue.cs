@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+
 using UnityEngine;
 using TMPro;
 
@@ -8,8 +9,10 @@ public class Dialogue : MonoBehaviour
     public UnityEngine.UI.Image dialogueImage;
     public MouseMovement mouseMovement;
     public TextMeshProUGUI textComponent;
+    public UnityEngine.UI.Image portraitImage;
     public float textSpeed;
     private DialogueLine[] lines;
+    public GameObject darkBackground;
 
     private int index;
     private bool dialogueActive = false;
@@ -53,6 +56,9 @@ public class Dialogue : MonoBehaviour
         IsDialogueActive = true;
         dialogueActive = true;
 
+        if (darkBackground != null)
+            darkBackground.SetActive(true);
+
         lines = dialogueLines;
         index = 0;
 
@@ -72,6 +78,7 @@ public class Dialogue : MonoBehaviour
     {
         textComponent.text = lines[index].text;
 
+        // Großes Bild
         if (lines[index].image != null)
         {
             dialogueImage.gameObject.SetActive(true);
@@ -81,10 +88,19 @@ public class Dialogue : MonoBehaviour
         {
             dialogueImage.gameObject.SetActive(false);
         }
+
+        // Portrait (Gargulus)
+        if (lines[index].portrait != null)
+        {
+            portraitImage.sprite = lines[index].portrait;
+        }
     }
 
     IEnumerator TypeLine()
     {
+        ShowLine();
+
+        textComponent.text = "";
         foreach (char c in lines[index].text.ToCharArray())
         {
             textComponent.text += c;
@@ -109,6 +125,9 @@ public class Dialogue : MonoBehaviour
         IsDialogueActive = false;
 
         gameObject.SetActive(false);
+
+        if (darkBackground != null)
+            darkBackground.SetActive(false);
 
         if (isEndDialogue)
         {

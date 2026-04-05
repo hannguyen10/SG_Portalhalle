@@ -501,7 +501,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -96.36774, y: -207}
+  m_AnchoredPosition: {x: -82.29852, y: -212.2422}
   m_SizeDelta: {x: 569.9762, y: 240.2034}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &76945942
@@ -831,46 +831,66 @@ MonoBehaviour:
   dialogueLines:
   - text: "Kommen wir zu etwas\u2026 Verf\xFChrerischem."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Den \u201CF\xFCrsten der Welt\u201D, Voluptas und einen Engel."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Schauen wir uns den F\xFCrsten n\xE4her an."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Von vorne?
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Sch\xF6n."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Charmant.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Fast \xFCberzeugend."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Doch wirf einen Blick auf die R\xFCckseite."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Kr\xF6ten."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Schlangen.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Molche.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "\xDCberraschend?"
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Nicht wirklich.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Die Botschaft ist klar.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Nicht alles, was gl\xE4nzt, ist Gold."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: 'Der Engel daneben warnt schon davor.
 
 '
     image: {fileID: 0}
-  - text: '"Fallt nicht in Versuchung."'
+    portrait: {fileID: 0}
+  - text: <i>Fallt nicht in Versuchung.</i>
     image: {fileID: 0}
-  - text: '"Wachet und betet."'
+    portrait: {fileID: 0}
+  - text: <i>Wachet und betet.</i>
     image: {fileID: 0}
-  - text: '"Geht nicht hinaus."'
+    portrait: {fileID: 0}
+  - text: <i>Geht nicht hinaus.</i>
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Eine sch\xF6ne Welt kann tr\xFCgerisch sein."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   quizData: {fileID: 11400000, guid: e31679d68145e084196b20f9de041538, type: 2}
   quizManager: {fileID: 703186750}
   hintUI: {fileID: 2033021684}
@@ -2091,6 +2111,81 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab4e6aa0b9354b94d85d5ce4d208be10, type: 3}
+--- !u!1 &313811747
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 313811748}
+  - component: {fileID: 313811750}
+  - component: {fileID: 313811749}
+  m_Layer: 0
+  m_Name: Gargulus
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &313811748
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313811747}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1519976311}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -607, y: -384}
+  m_SizeDelta: {x: -1044.3384, y: -302.1772}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &313811749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313811747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 37fd9c28f56c58c48b287f219087079c, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &313811750
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313811747}
+  m_CullTransparentMesh: 1
 --- !u!1 &323870640 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8328022f3e9ee42448382c7e77994059, type: 3}
@@ -6813,6 +6908,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1968148562}
   - {fileID: 1519976311}
   - {fileID: 958064899}
   - {fileID: 1730165097}
@@ -6941,84 +7037,121 @@ MonoBehaviour:
   dialogueLines:
   - text: "Ah\u2026 meine Lieblingsgeschichte."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Zehn Jungfrauen warten hier.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "F\xFCnf klug."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "F\xFCnf t\xF6richt."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Damals lief eine Hochzeit anders ab als heute.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: 'Die Braut wartete im Haus ihrer Eltern.
 
 '
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Sp\xE4t am Abend kam der Br\xE4utigam mit Musik und einem Festzug, um
       sie in sein eigenes Haus zu f\xFChren.\r\n"
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: 'Die Jungfrauen warteten mit ihren Lampen, um den Hochzeitszug zu begleiten.
 
 '
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Doch nachts braucht man Licht.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Lampen und \xD6l."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Alle zehn Jungfrauen warten lange.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Sie werden m\xFCde und schlafen ein."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Das kann passieren.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Dann um Mitternacht der Ruf.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "\u201CDer Br\xE4utigam kommt!\u201D"
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Jetzt entscheidet sich alles.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Die Klugen haben zus\xE4tzliches \xD6l mitgebracht.\r\n"
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Sie sind vorbereitet.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Ihre Lampen brennen weiter.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Die T\xF6richten hingegen?"
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Kein zus\xE4tzliches \xD6l."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Ihre Lampen gehen aus.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Und genau das siehst du an den Steinfiguren wieder.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Die klugen Jungfrauen halten ihre Lampen nach oben.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Die t\xF6richten Jungfrauen halten ihre Lampen nach unten."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "W\xE4hrend sie neues \xD6l suchen, zieht der Hochzeitszug weiter."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Die T\xFCr wird verschlossen.\r\n"
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Sie sind zu sp\xE4t und kommen nicht mehr rein."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Kleine Lampen.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Gro\xDFe Konsequenzen."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Der Br\xE4utigam steht f\xFCr Christus."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Die Brautjungfern stehen f\xFCr die Gl\xE4ubigen."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Die Lampen f\xFCr den Glauben."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Die Wartezeit erinnert an die Zeit, in der Menschen auf seine Wiederkunft
       warten.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Die Botschaft ist einfach.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Wer wachsam ist und den Glauben beh\xE4lt, darf eintreten."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Wer nicht wachsam ist, bleibt drau\xDFen."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   quizData: {fileID: 11400000, guid: 72473ec677b24ac40a942ab38d3d85ac, type: 2}
   quizManager: {fileID: 703186750}
   hintUI: {fileID: 2033021684}
@@ -7112,7 +7245,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -114, y: -288}
+  m_AnchoredPosition: {x: -99.930786, y: -293.2422}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &895813307
@@ -7730,84 +7863,121 @@ MonoBehaviour:
   dialogueLines:
   - text: "Ah\u2026 meine Lieblingsgeschichte."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Zehn Jungfrauen warten hier.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "F\xFCnf klug."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "F\xFCnf t\xF6richt."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Damals lief eine Hochzeit anders ab als heute.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Die Braut wartete im Haus ihrer Eltern.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Sp\xE4t am Abend kam der Br\xE4utigam mit Musik und einem Festzug, um
       sie in sein eigenes Haus zu f\xFChren."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Die Jungfrauen warteten mit ihren Lampen, um den Hochzeitszug zu begleiten.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Doch nachts braucht man Licht.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Lampen und \xD6l.\r\n"
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Alle zehn Jungfrauen warten lange.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Sie werden m\xFCde und schlafen ein."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Das kann passieren.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: 'Dann um Mitternacht der Ruf.
 
 '
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "\u201CDer Br\xE4utigam kommt!\u201D"
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Jetzt entscheidet sich alles.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Die Klugen haben zus\xE4tzliches \xD6l mitgebracht."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Sie sind vorbereitet.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Ihre Lampen brennen weiter.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Die T\xF6richten hingegen?"
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Kein zus\xE4tzliches \xD6l."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Ihre Lampen gehen aus.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: 'Und genau das siehst du an den Steinfiguren wieder.
 
 '
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Die klugen Jungfrauen halten ihre Lampen nach oben.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Die t\xF6richten Jungfrauen halten ihre Lampen nach unten. "
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "W\xE4hrend sie neues \xD6l suchen, zieht der Hochzeitszug weiter. "
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Die T\xFCr wird verschlossen."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Sie sind zu sp\xE4t und kommen nicht mehr rein."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Kleine Lampen.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Gro\xDFe Konsequenzen."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Der Br\xE4utigam steht f\xFCr Christus."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Die Brautjungfern stehen f\xFCr die Gl\xE4ubigen."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Die Lampen f\xFCr den Glauben."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Die Wartezeit erinnert an die Zeit, in der Menschen auf seine Wiederkunft
       warten.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Die Botschaft ist einfach.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Wer wachsam ist und den Glauben beh\xE4lt, darf eintreten."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Wer nicht wachsam ist, bleibt drau\xDFen."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   quizData: {fileID: 11400000, guid: 72473ec677b24ac40a942ab38d3d85ac, type: 2}
   quizManager: {fileID: 703186750}
   hintUI: {fileID: 2033021684}
@@ -8173,33 +8343,46 @@ MonoBehaviour:
   dialogueLines:
   - text: "Zeit f\xFCr Wissen."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Hier siehst du die sieben freien K\xFCnste."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Auf Latein die Septem Artes Liberales.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Oder einfach gesagt, die Artes.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Im Mittelalter glaubte man, wer sie beherrscht, versteht die Welt.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Zun\xE4chst das Trivium."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Die Dreiheit der sprachlichen K\xFCnste."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: 'Bestehend aus Grammatik, Dialektik und Rhetorik.
 
 '
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Dann das Quadrivium.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Sie bezieht sich auf die mathematischen Disziplinen.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "N\xE4mlich Arithmetik, Geometrie, Musik und Astronomie.\r\n"
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Jede Kunst tr\xE4gt ihr eigenes Attribut."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Und jedes zeigt, wie sehr Sprache, Zahlen und Musik mit der g\xF6ttlichen
       Ordnung verbunden waren.\r\n"
     image: {fileID: 0}
+    portrait: {fileID: 0}
   quizData: {fileID: 11400000, guid: f57877d1f838d144e981d9c37baa3e47, type: 2}
   quizManager: {fileID: 703186750}
   hintUI: {fileID: 2033021684}
@@ -8325,7 +8508,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 36ecedd3fa49a47468cb67009ca738de, type: 3}
       propertyPath: m_LocalScale.x
-      value: 4.576973
+      value: 4.6108427
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 36ecedd3fa49a47468cb67009ca738de, type: 3}
       propertyPath: m_LocalScale.y
@@ -8337,7 +8520,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 36ecedd3fa49a47468cb67009ca738de, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12.4089
+      value: -12.39
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 36ecedd3fa49a47468cb67009ca738de, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8345,23 +8528,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 36ecedd3fa49a47468cb67009ca738de, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.181
+      value: 6.33
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 36ecedd3fa49a47468cb67009ca738de, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.015261373
+      value: -0.004722826
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 36ecedd3fa49a47468cb67009ca738de, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.015261377
+      value: -0.004722831
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 36ecedd3fa49a47468cb67009ca738de, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.7069421
+      value: -0.70709103
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 36ecedd3fa49a47468cb67009ca738de, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.7069421
+      value: 0.70709103
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 36ecedd3fa49a47468cb67009ca738de, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8373,7 +8556,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 36ecedd3fa49a47468cb67009ca738de, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 182.473
+      value: 180.765
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 36ecedd3fa49a47468cb67009ca738de, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -8396,7 +8579,10 @@ PrefabInstance:
       addedObject: {fileID: 975009095}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 36ecedd3fa49a47468cb67009ca738de, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 975009099}
+      addedObject: {fileID: 975009103}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 36ecedd3fa49a47468cb67009ca738de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 975009104}
   m_SourcePrefab: {fileID: 100100000, guid: 36ecedd3fa49a47468cb67009ca738de, type: 3}
 --- !u!1 &975009094 stripped
 GameObject:
@@ -8418,13 +8604,26 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 5.7935767, y: 0.4935762, z: 8.749259}
   m_Center: {x: -2.3500013, y: 0.00000035170535, z: 0.60015905}
---- !u!114 &975009099
+--- !u!114 &975009103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975009094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f62a9c94a19290449aed3c82f2860c1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endGameTrigger: {fileID: 975009104}
+--- !u!114 &975009104
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8440,6 +8639,7 @@ MonoBehaviour:
   endDialogue:
   - text: Test
     image: {fileID: 0}
+    portrait: {fileID: 0}
   endConfirmUI: {fileID: 1730165096}
   mouseMovement: {fileID: 1758050976}
   playerMovement: {fileID: 1758050981}
@@ -9242,7 +9442,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 975009099}
+      - m_Target: {fileID: 975009104}
         m_TargetAssemblyTypeName: EndGameTrigger, Assembly-CSharp
         m_MethodName: EndGameYes
         m_Mode: 1
@@ -13083,16 +13283,17 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1917214127}
+  - {fileID: 313811748}
   - {fileID: 2082645131}
-  - {fileID: 895813306}
+  - {fileID: 1917214127}
   - {fileID: 76945941}
+  - {fileID: 895813306}
   m_Father: {fileID: 883183583}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1519976312
 MonoBehaviour:
@@ -13147,7 +13348,9 @@ MonoBehaviour:
   dialogueImage: {fileID: 2082645132}
   mouseMovement: {fileID: 1758050976}
   textComponent: {fileID: 895813307}
+  portraitImage: {fileID: 313811749}
   textSpeed: 0.05
+  darkBackground: {fileID: 1968148561}
   quizManager: {fileID: 703186750}
 --- !u!1 &1524684475
 GameObject:
@@ -15796,7 +15999,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 245.93079, y: 223.24222}
+  m_AnchoredPosition: {x: 260, y: 218}
   m_SizeDelta: {x: 1133.4841, y: 349.4876}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1917214128
@@ -16356,6 +16559,81 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1374413407}
   m_SourcePrefab: {fileID: 100100000, guid: 8328022f3e9ee42448382c7e77994059, type: 3}
+--- !u!1 &1968148561
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1968148562}
+  - component: {fileID: 1968148564}
+  - component: {fileID: 1968148563}
+  m_Layer: 0
+  m_Name: DarkBackground
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1968148562
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968148561}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 883183583}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.0025024414}
+  m_SizeDelta: {x: 0, y: -0.005127}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1968148563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968148561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.16037738, g: 0.16037738, b: 0.16037738, a: 0.45490196}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1968148564
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968148561}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1968877386
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17118,7 +17396,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 975009099}
+      - m_Target: {fileID: 975009104}
         m_TargetAssemblyTypeName: EndGameTrigger, Assembly-CSharp
         m_MethodName: EndGameNo
         m_Mode: 1
@@ -17458,49 +17736,70 @@ MonoBehaviour:
   dialogueLines:
   - text: Falls du es noch nicht gemerkt hast.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Diese Halle ist alt.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Sehr alt.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: 'Wann genau sie gebaut wurde?
 
 '
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Tja\u2026 dar\xFCber streiten sich die Gelehrten."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Schriftliche Quellen zur Baugeschichte gibt es kaum.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Ich selbst kam erst sp\xE4ter dazu."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Aber laut der Forschung begann der Bau um 1270.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Und wichtig zu erw\xE4hnen."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Die Halle kam nicht zuerst und die Figuren sp\xE4ter."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Alles wurde gemeinsam konzipiert.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Die Figuren im Tympanon.
-    image: {fileID: 0}
+    image: {fileID: 21300000, guid: b43ce4bcac7269d4796a232c084ac17e, type: 3}
+    portrait: {fileID: 0}
   - text: Die Archivoltenfiguren.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Die gro\xDFen Skulpturen an den W\xE4nden."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Keine nachtr\xE4gliche Dekoration.\r\n"
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Alles Teil eines durchdaten Konzepts.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: "Die gro\xDFen freistehenden Figuren, zum Beispiel die Jungfrauen, wurden
       erst ganz zum Schluss aufgestellt."
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Doch ihre Sockel waren breiter als gedacht.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Einige der unteren Giebelkrabben mussten deshalb abgeschlagen werden.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Stein kann man bearbeiten.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   - text: Aber Platz hat er auch nicht unendlich.
     image: {fileID: 0}
+    portrait: {fileID: 0}
   quizData: {fileID: 11400000, guid: 2debf5865b0f7354ea3aced6478f7bbc, type: 2}
   quizManager: {fileID: 703186750}
   hintUI: {fileID: 2033021684}
@@ -17916,8 +18215,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 244.42453, y: 133.60132}
-  m_SizeDelta: {x: 958.8491, y: 452.1415}
+  m_AnchoredPosition: {x: 258.49374, y: 143.06572}
+  m_SizeDelta: {x: 958.8491, y: 528.6157}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2082645132
 MonoBehaviour:
@@ -17932,15 +18231,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.1254902, g: 0.1254902, b: 0.1254902, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -18377,7 +18676,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5022114256942132371, guid: d86a5fc198f37a841ba9583fd4bef654, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.4
+      value: 8.19
       objectReference: {fileID: 0}
     - target: {fileID: 5022114256942132371, guid: d86a5fc198f37a841ba9583fd4bef654, type: 3}
       propertyPath: m_LocalRotation.w
