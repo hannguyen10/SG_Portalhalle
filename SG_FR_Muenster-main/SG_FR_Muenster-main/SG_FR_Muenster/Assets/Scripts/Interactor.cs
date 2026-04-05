@@ -17,35 +17,31 @@ public class Interactor : MonoBehaviour
 
     void Update()
     {
-        if (Dialogue.IsDialogueActive || QuizManager.IsQuizActive)
-        {
-            currentInteractable?.OnHoverExit();
-            currentInteractable = null;
-            return;
-        }
+        Ray ray = new Ray(InteractorSource.position, InteractorSource.forward);
+        RaycastHit hit;
 
-        Ray r = new Ray(InteractorSource.position, InteractorSource.forward);
-
-        if (Physics.Raycast(r, out RaycastHit hitInfo, InteractRange))
+        if (Physics.Raycast(ray, out hit, InteractRange))
         {
-            if (hitInfo.collider.TryGetComponent(out IInteractable interactable))
+            IInteractable interactable = hit.collider.GetComponent<IInteractable>();
+
+            if (interactable != null)
             {
-                // Neues Objekt angeschaut
                 if (currentInteractable != interactable)
                 {
                     currentInteractable?.OnHoverExit();
                     currentInteractable = interactable;
                     currentInteractable.OnHoverEnter();
                 }
-                if (Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0))
+
+                if (Input.GetMouseButtonDown(0))
                 {
                     currentInteractable.Interact();
                 }
+
                 return;
             }
         }
 
-        // Wenn nichts mehr angeschaut wird
         if (currentInteractable != null)
         {
             currentInteractable.OnHoverExit();
