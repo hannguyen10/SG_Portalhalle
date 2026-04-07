@@ -13,8 +13,15 @@ public class QuizManager : MonoBehaviour
     public TextMeshProUGUI feedbackText;
     public GameObject darkBackground;
 
+    [Header("Audio")]
+    public AudioSource audioSource;
+    public AudioClip correctSound;
+    public AudioClip wrongSound;
+
     [Header("Player")]
     public MouseMovement mouseMovement;
+
+
 
     public static bool IsQuizActive = false;
     private QuizData currentQuiz;
@@ -81,11 +88,19 @@ public class QuizManager : MonoBehaviour
     {
         foreach (Button b in answerButtons)
             b.interactable = false;
+        
+        bool isCorrect = index == currentQuiz.correctAnswerIndex;
 
         string[] explanationLines =
             (index == currentQuiz.correctAnswerIndex)
             ? currentQuiz.correctExplanationLines
             : currentQuiz.wrongExplanationLines;
+
+        if (audioSource != null)
+        {
+            audioSource.PlayOneShot(isCorrect ? correctSound : wrongSound);
+        }
+
 
         CloseQuiz();
 
