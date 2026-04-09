@@ -4,16 +4,24 @@ using UnityEngine;
 
 public class CreditPanel : MonoBehaviour{
 
-    public GameObject Panel;
+    public GameObject panel;
 
     public void OpenPanel()
     {
-        if (Panel != null)
+        Debug.Log("OpenPanel wurde aufgerufen");
+        if (panel != null)
         {
-            bool isActive = Panel.activeSelf;
-            Panel.SetActive(!isActive);
+            panel.SetActive(true);
+            panel.transform.SetAsLastSibling();
         }
-        
+    }
+
+    public void ClosePanel()
+    {
+        if (panel != null)
+        {
+            panel.SetActive(false);
+        }
     }
 
    
