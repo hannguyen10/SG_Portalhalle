@@ -8,7 +8,6 @@ public class CreditPanel : MonoBehaviour{
 
     public void OpenPanel()
     {
-        Debug.Log("OpenPanel wurde aufgerufen");
         if (panel != null)
         {
             panel.SetActive(true);
