@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c584e16790feaf4383516e1450d1dba, type: 3}
   m_Name: "Quiz-4_Szene-5-F\xFCrst-der-Welt"
   m_EditorClassIdentifier: 
-  question: "Warum wirkt der \u201EF\xFCrst der Welt\u201C von hinten so absto\xDFend?"
+  question: "Warum wirkt der \u201EF\xFCrst der Welt\u201C von hinten absto\xDFend?"
   answers:
   - "Um vor T\xE4uschung und Versuchung zu warnen"
   - 'Der Steinmetz hat sich einen Witz erlaubt '
