@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 playerVelocity;
     private bool isGrounded;
     public float speed = 5f;
-    public float gravity = -9.8f;
+   
 
 
     void Start()
@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
         if (isGrounded && playerVelocity.y < 0)
             playerVelocity.y = -2f;
 
-        playerVelocity.y += gravity * Time.deltaTime;
+       
         controller.Move(playerVelocity * Time.deltaTime);
 
     }

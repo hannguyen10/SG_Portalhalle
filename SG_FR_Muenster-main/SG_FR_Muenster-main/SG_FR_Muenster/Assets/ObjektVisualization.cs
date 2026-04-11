@@ -64,7 +64,7 @@ public class ObjektVisualization : MonoBehaviour, IInteractable
         outline.enabled = false;
 
         dialogueManager.gameObject.SetActive(true);
-        dialogueManager.StartDialogue(dialogueLines);
+        dialogueManager.StartDialogue(dialogueLines, false);
 
         if (quizData != null)
         {

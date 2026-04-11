@@ -11,7 +11,6 @@ public class Dialogue : MonoBehaviour
     public Sprite defaultPortrait;
     public MouseMovement mouseMovement;
     public TextMeshProUGUI textComponent;
-    public float textSpeed;
     private DialogueLine[] lines;
     public GameObject darkBackground;
 
@@ -32,15 +31,7 @@ public class Dialogue : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            if (textComponent.text == lines[index].text)
-            {
-                NextLine();
-            }
-            else
-            {
-                StopAllCoroutines();
-                textComponent.text = lines[index].text;
-            }
+            NextLine();
         }
     }
 
@@ -51,7 +42,6 @@ public class Dialogue : MonoBehaviour
 
     public void StartDialogue(DialogueLine[] dialogueLines, bool endDialogue = false)
     {
-
         if (IsDialogueActive) return;
         pendingQuiz = null;
 
@@ -76,9 +66,7 @@ public class Dialogue : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 
-        textComponent.text = string.Empty;
-        StopAllCoroutines();
-        StartCoroutine(TypeLine());
+        ShowLine(); // ← direkt anzeigen
     }
 
     void ShowLine()
@@ -96,34 +84,19 @@ public class Dialogue : MonoBehaviour
             dialogueImage.gameObject.SetActive(false);
         }
 
-        // Portrait (Gargulus)
+        // Portrait
         if (lines[index].portrait != null)
         {
             portraitImage.sprite = lines[index].portrait;
         }
     }
 
-    IEnumerator TypeLine()
-    {
-        ShowLine();
-
-        textComponent.text = "";
-        foreach (char c in lines[index].text.ToCharArray())
-        {
-            textComponent.text += c;
-            yield return new WaitForSeconds(textSpeed);
-        }
-    }
-
     void NextLine()
     {
-        Debug.Log("Dialogue [" + gameObject.name + "] QuizManager = " + quizManager);
         if (index < lines.Length - 1)
         {
             index++;
             ShowLine();
-            textComponent.text = string.Empty;
-            StartCoroutine(TypeLine());
             return;
         }
 
@@ -141,21 +114,15 @@ public class Dialogue : MonoBehaviour
 
         if (isEndDialogue)
         {
-            if (OnDialogueFinished != null)
-            {
-                OnDialogueFinished.Invoke();
-            }
+            OnDialogueFinished?.Invoke();
         }
-        // FALL 1: Quiz folgt
+
         if (pendingQuiz != null && quizManager != null)
         {
-            Debug.Log("Starte Quiz nach Dialog");
             quizManager.StartQuizDelayed(pendingQuiz);
             pendingQuiz = null;
             return;
         }
-
-        // FALL 2: Kein Quiz → zurück ins Gameplay
 
         if (mouseMovement != null)
             mouseMovement.lookEnabled = true;
