@@ -179,8 +179,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Deatillierte 3D-Objekte wie Figuren, S\xE4ulen und T\xFCr wurden von Meshy.ai
-    generiert. Die restlichen wurden selbst erstellt."
+  m_text: "Deatillierte 3D-Objekte wie Figuren, S\xE4ulen, Tympanon und T\xFCr wurden
+    mit Meshy.ai generiert. Die restlichen Objekte wurden selbst erstellt."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -243,7 +243,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -503.67188, w: -67.052246}
+  m_margin: {x: 0, y: 0, z: -578.2057, w: -67.052246}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1663,8 +1663,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Konzept und Design wurden selbst erstellt. Illustration & weitere Sprites
-    von \nDantam Nguyen gezeichnet."
+  m_text: "Konzept und Design wurden selbst erstellt, w\xE4hrend Illustrationen und
+    weitere Sprites von Dantam Nguyen gezeichnet wurden."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1727,7 +1727,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -498.33472, w: -84.96283}
+  m_margin: {x: 0, y: 0, z: -386.76392, w: -84.96283}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
