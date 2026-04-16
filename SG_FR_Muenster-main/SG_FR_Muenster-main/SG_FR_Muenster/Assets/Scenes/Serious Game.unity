@@ -3430,6 +3430,46 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 898378796}
   m_SourcePrefab: {fileID: 100100000, guid: e0c8d20c4779c9e4ebd21f4018cbbe4b, type: 3}
+--- !u!21 &414487025
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI/RoundedCorners/RoundedCorners
+  m_Shader: {fileID: 4800000, guid: 0bd2ec5d73751e34a814274a454bec41, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _OuterUV: {r: 0, g: 0, b: 1, a: 1}
+    - _WidthHeightRadius: {r: 636.3022, g: 820.967, b: 40, a: 0}
+  m_BuildTextureStacks: []
 --- !u!1 &421929679
 GameObject:
   m_ObjectHideFlags: 0
@@ -7061,7 +7101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2118281081}
+  m_Material: {fileID: 414487025}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -8006,6 +8046,7 @@ MonoBehaviour:
     zeigt."
   - Aber erkunde zuerst alles selbst.
   - Die Karte ist nur eine Hilfe.
+  - Wenn du die Halle verlassen willst, geh einfach durch den Ausgang.
   - "Keine Sorge, Hinweise bekommst du unterwegs.\r"
   - Also los.
   - Sieh dich um.
@@ -8027,46 +8068,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &862557380
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/RoundedCorners/RoundedCorners
-  m_Shader: {fileID: 4800000, guid: 0bd2ec5d73751e34a814274a454bec41, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _OuterUV: {r: 0.0008359682, g: 0.0016036462, b: 0.99916404, a: 0.99839634}
-    - _WidthHeightRadius: {r: 958, g: 528, b: 40, a: 0}
-  m_BuildTextureStacks: []
 --- !u!1001 &863783156
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9119,7 +9120,7 @@ MonoBehaviour:
   - text: "F\xFCnf klug."
     image: {fileID: 0}
     portrait: {fileID: 0}
-  - text: "F\xFCnf t\xF6richt."
+  - text: "Gegen\xFCber f\xFCnf t\xF6richt."
     image: {fileID: 0}
     portrait: {fileID: 0}
   - text: Damals lief eine Hochzeit anders ab als heute.
@@ -9135,10 +9136,7 @@ MonoBehaviour:
   - text: Die Jungfrauen warteten mit ihren Lampen, um den Hochzeitszug zu begleiten.
     image: {fileID: 0}
     portrait: {fileID: 0}
-  - text: Doch nachts braucht man Licht.
-    image: {fileID: 0}
-    portrait: {fileID: 0}
-  - text: "Lampen und \xD6l.\r\n"
+  - text: "Doch nachts braucht man Licht und Lampen brauchen \xD6l."
     image: {fileID: 0}
     portrait: {fileID: 0}
   - text: Alle zehn Jungfrauen warten lange.
@@ -9622,7 +9620,7 @@ MonoBehaviour:
   - text: Sie bezieht sich auf die mathematischen Disziplinen.
     image: {fileID: 0}
     portrait: {fileID: 0}
-  - text: "N\xE4mlich Arithmetik, Geometrie, Musik und Astronomie.\r\n"
+  - text: "N\xE4mlich Geometrie, Musik, Arithmetik und Astronomie.\r\n"
     image: {fileID: 21300000, guid: eb27d2702467a1f4c91f9b0f5e4eab63, type: 3}
     portrait: {fileID: 0}
   - text: "Jede Kunst tr\xE4gt ihr eigenes Attribut."
@@ -10661,7 +10659,7 @@ MonoBehaviour:
   - text: "Nicht alles, was gl\xE4nzt, ist Gold."
     image: {fileID: 0}
     portrait: {fileID: 0}
-  - text: Der Engel daneben warnt schon davor.
+  - text: 'Der Engel daneben soll davor warnen:'
     image: {fileID: 0}
     portrait: {fileID: 0}
   - text: '"Fallt nicht in Versuchung."'
@@ -16122,6 +16120,46 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69cfef3a5b642bb48bd8d519577c1cca, type: 3}
+--- !u!21 &1585120911
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI/RoundedCorners/RoundedCorners
+  m_Shader: {fileID: 4800000, guid: 0bd2ec5d73751e34a814274a454bec41, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _OuterUV: {r: 0.0008359682, g: 0.0016036462, b: 0.99916404, a: 0.99839634}
+    - _WidthHeightRadius: {r: 958, g: 528, b: 40, a: 0}
+  m_BuildTextureStacks: []
 --- !u!1 &1588424327
 GameObject:
   m_ObjectHideFlags: 0
@@ -17248,8 +17286,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lookEnabled: 1
   cam: {fileID: 1119413017}
-  xSensitivity: 6
-  ySensitivity: 6
+  xSensitivity: 4
+  ySensitivity: 4
 --- !u!4 &1758050977 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5022114256942132371, guid: d86a5fc198f37a841ba9583fd4bef654, type: 3}
@@ -20432,7 +20470,7 @@ MonoBehaviour:
   - text: Aber laut der Forschung begann der Bau um 1270.
     image: {fileID: 0}
     portrait: {fileID: 0}
-  - text: "Und wichtig zu erw\xE4hnen."
+  - text: "Und wichtig zu erw\xE4hnen:"
     image: {fileID: 0}
     portrait: {fileID: 0}
   - text: "Die Halle kam nicht zuerst und die Figuren sp\xE4ter."
@@ -20464,7 +20502,7 @@ MonoBehaviour:
     image: {fileID: 0}
     portrait: {fileID: 0}
   - text: Einige der unteren Giebelkrabben mussten deshalb abgeschlagen werden.
-    image: {fileID: 0}
+    image: {fileID: 21300000, guid: b8fb6a3016fd2b64fbce296c3361ef50, type: 3}
     portrait: {fileID: 0}
   - text: Stein kann man bearbeiten.
     image: {fileID: 0}
@@ -20919,7 +20957,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 862557380}
+  m_Material: {fileID: 1585120911}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -21340,46 +21378,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6f7dca1de450c4479cad30a9360d816, type: 3}
---- !u!21 &2118281081
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/RoundedCorners/RoundedCorners
-  m_Shader: {fileID: 4800000, guid: 0bd2ec5d73751e34a814274a454bec41, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _OuterUV: {r: 0, g: 0, b: 1, a: 1}
-    - _WidthHeightRadius: {r: 636.3022, g: 820.967, b: 40, a: 0}
-  m_BuildTextureStacks: []
 --- !u!1001 &2120343741
 PrefabInstance:
   m_ObjectHideFlags: 0
