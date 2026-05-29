@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable] // zeigt es im Inspector an
+[System.Serializable]
 public class DialogueLine
 {
     [TextArea(3,5)]

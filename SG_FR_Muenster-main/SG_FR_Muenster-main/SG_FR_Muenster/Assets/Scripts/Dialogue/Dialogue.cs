@@ -1,6 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
-
 using UnityEngine;
 using TMPro;
 
@@ -66,7 +64,7 @@ public class Dialogue : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 
-        ShowLine(); // ← direkt anzeigen
+        ShowLine();
     }
 
     void ShowLine()

@@ -26,7 +26,6 @@ public class EndGameTrigger : MonoBehaviour
     {
         endConfirmUI.SetActive(true);
 
-        // Spieler stoppen
         if (mouseMovement != null)
             mouseMovement.lookEnabled = false;
 
@@ -54,7 +53,6 @@ public class EndGameTrigger : MonoBehaviour
     {
         endConfirmUI.SetActive(false);
 
-        // Spieler wieder bewegen lassen
         if (mouseMovement != null)
             mouseMovement.lookEnabled = true;
 

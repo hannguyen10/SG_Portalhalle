@@ -28,7 +28,7 @@ public class QuizManager : MonoBehaviour
 
     void Start()
     {
-        // Startzustand: unsichtbar
+       // set the panel on invisible
         canvasGroup.alpha = 0;
         canvasGroup.interactable = false;
         canvasGroup.blocksRaycasts = false;
@@ -41,7 +41,7 @@ public class QuizManager : MonoBehaviour
 
     IEnumerator StartQuizNextFrame(QuizData quiz)
     {
-        yield return null; // 1 Frame warten
+        yield return null;
         StartQuiz(quiz);
     }
 
@@ -57,21 +57,21 @@ public class QuizManager : MonoBehaviour
         if (darkBackground != null)
             darkBackground.SetActive(true);
 
-        // Kamera & Maus
+        
         mouseMovement.lookEnabled = false;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 
-        // UI sichtbar
+        
         canvasGroup.alpha = 1;
         canvasGroup.interactable = true;
         canvasGroup.blocksRaycasts = true;
 
-        // Inhalte setzen
+        
         questionText.text = quiz.question;
         feedbackText.text = "";
 
-        // Buttons konfigurieren
+        
         for (int i = 0; i < answerButtons.Length; i++)
         {
             int index = i;
@@ -125,7 +125,7 @@ public class QuizManager : MonoBehaviour
     {
         IsQuizActive = false;
 
-        // UI ausblenden
+        
         canvasGroup.alpha = 0;
         canvasGroup.interactable = false;
         canvasGroup.blocksRaycasts = false;
@@ -133,7 +133,7 @@ public class QuizManager : MonoBehaviour
         if (darkBackground != null)
             darkBackground.SetActive(false);
 
-        // Gameplay zurück
+        
         mouseMovement.lookEnabled = true;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;

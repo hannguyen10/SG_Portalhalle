@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LoadCreditsAfterDialogue : MonoBehaviour
+public class CreditsAfterDialogue : MonoBehaviour
 {
     public Dialogue dialogue;
     public string creditsSceneName = "Credit Scene";

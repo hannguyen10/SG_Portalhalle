@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c584e16790feaf4383516e1450d1dba, type: 3}
-  m_Name: "Quiz-1_Szene-2-Portalle erkl\xE4rt"
+  m_Name: "Quiz-1_Szene-2-Porthalle erkl\xE4rt"
   m_EditorClassIdentifier: 
   question: "Was verraten die Steinb\xE4nke an den W\xE4nden?"
   answers:

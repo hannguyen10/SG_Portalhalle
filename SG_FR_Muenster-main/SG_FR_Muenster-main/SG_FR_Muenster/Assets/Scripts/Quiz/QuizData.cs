@@ -1,6 +1,7 @@
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "QuizData")]
+// saveable data file
 public class QuizData : ScriptableObject
 {
     [TextArea]
@@ -8,7 +9,6 @@ public class QuizData : ScriptableObject
 
     public string[] answers;
 
-    [Tooltip("0, 1, 2")]
     public int correctAnswerIndex;
 
     [TextArea]

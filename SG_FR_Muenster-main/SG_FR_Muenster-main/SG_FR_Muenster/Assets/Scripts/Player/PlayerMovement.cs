@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -21,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
     {
         isGrounded = controller.isGrounded;
     }
-    //receive inputs and apply to character controller
+   
     public void ProcessMove(Vector2 input)
     {
         if (Dialogue.IsDialogueActive || QuizManager.IsQuizActive)
