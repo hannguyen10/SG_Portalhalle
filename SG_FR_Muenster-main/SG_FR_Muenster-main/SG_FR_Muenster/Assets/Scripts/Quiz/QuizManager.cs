@@ -47,7 +47,6 @@ public class QuizManager : MonoBehaviour
 
     public void StartQuiz(QuizData quiz)
     {
-        Debug.Log("Quiz gestartet");
 
         IsQuizActive = true;
         currentQuiz = quiz;

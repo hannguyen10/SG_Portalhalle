@@ -27,7 +27,7 @@ public class MapPanel : MonoBehaviour
 
         if (isOpen)
         {
-            // Spieler stoppen
+            //stop player
             mouseMovement.lookEnabled = false;
             playerMovement.enabled = false;
 
@@ -36,7 +36,7 @@ public class MapPanel : MonoBehaviour
         }
         else
         {
-            // Spieler wieder bewegen
+            
             mouseMovement.lookEnabled = true;
             playerMovement.enabled = true;
 

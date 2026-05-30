@@ -28,7 +28,7 @@ public class ObjectInteraction : MonoBehaviour, IInteractable
         }
         else
         {
-            Debug.LogWarning("Kein Outline Component auf " + gameObject.name);
+            Debug.LogWarning("Kein Outline auf " + gameObject.name);
         }
     }
 

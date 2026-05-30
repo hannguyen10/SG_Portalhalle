@@ -1,3 +1,5 @@
+//this video was used as a basis and guide and has been adapted and expanded accordingly: https://youtu.be/_nRzoTzeyxU?si=ckxVUHQAspxNwrdI
+
 using System.Collections;
 using UnityEngine;
 using TMPro;
@@ -71,7 +73,7 @@ public class Dialogue : MonoBehaviour
     {
         textComponent.text = lines[index].text;
 
-        // Großes Bild
+        //image
         if (lines[index].image != null)
         {
             dialogueImage.gameObject.SetActive(true);
@@ -82,7 +84,7 @@ public class Dialogue : MonoBehaviour
             dialogueImage.gameObject.SetActive(false);
         }
 
-        // Portrait
+        //portrait
         if (lines[index].portrait != null)
         {
             portraitImage.sprite = lines[index].portrait;
@@ -98,7 +100,7 @@ public class Dialogue : MonoBehaviour
             return;
         }
 
-        // === Dialog endet ===
+        
         dialogueActive = false;
         IsDialogueActive = false;
 
@@ -131,12 +133,12 @@ public class Dialogue : MonoBehaviour
 
     IEnumerator StartQuizNextFrame(QuizData quiz)
     {
-        yield return null; // wartet 1 Frame
+        yield return null; // wait 1 frame
         quizManager.StartQuiz(quiz);
     }
 
-    void Awake()
-    {
-        Debug.Log("DialoguePanel Awake, active = " + gameObject.activeSelf);
-    }
+    // void Awake()
+    // {
+    //     Debug.Log("DialoguePanel Awake, active = " + gameObject.activeSelf);
+    // }
 }
